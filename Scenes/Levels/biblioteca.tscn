@@ -1,0 +1,49 @@
+[gd_scene load_steps=9 format=3 uid="uid://w8q3y2ef250l"]
+
+[ext_resource type="Texture2D" uid="uid://bnmgp72dk7oub" path="res://Scenes/Misc/biblioteca.png" id="1_xr6td"]
+[ext_resource type="PackedScene" uid="uid://bvg5dny32iw0x" path="res://Scenes/Player/Player.tscn" id="2_yax1a"]
+[ext_resource type="PackedScene" uid="uid://cx8kkqawojm0m" path="res://Scenes/Misc/SceneSettings.tscn" id="3_4fxns"]
+[ext_resource type="PackedScene" uid="uid://b4l1gom0wsk8p" path="res://Scenes/Interactables/area_exit.tscn" id="3_iasja"]
+[ext_resource type="PackedScene" uid="uid://dei3j88yw6omf" path="res://Scenes/Levels/MainFloor.tscn" id="4_4fxns"]
+[ext_resource type="PackedScene" uid="uid://ceoo6gamb4olk" path="res://Scenes/Interactables/Area_Blocker.tscn" id="5_2jhim"]
+[ext_resource type="Script" uid="uid://c5iuc8h20x4rn" path="res://Scripts/AreaExit_biblioteca.gd" id="6_4fxns"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xr6td"]
+size = Vector2(127, 37.625)
+
+[node name="Biblioteca" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -147.0
+offset_top = -142.0
+offset_right = 232.0
+offset_bottom = 121.0
+texture = ExtResource("1_xr6td")
+expand_mode = 2
+
+[node name="Player" parent="." instance=ExtResource("2_yax1a")]
+position = Vector2(-106, -76)
+platform_wall_layers = 1
+
+[node name="SceneSettings" parent="." instance=ExtResource("3_4fxns")]
+
+[node name="Scene" type="Node" parent="."]
+
+[node name="AreaBlocker" parent="Scene" instance=ExtResource("5_2jhim")]
+position = Vector2(-104, -125)
+
+[node name="AreaExit" parent="Scene" instance=ExtResource("3_iasja")]
+position = Vector2(-106, -127)
+script = ExtResource("6_4fxns")
+next_scene = ExtResource("4_4fxns")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Scene"]
+position = Vector2(6, 48)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Scene/StaticBody2D"]
+position = Vector2(35.5, -59.1875)
+shape = SubResource("RectangleShape2D_xr6td")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Scene/StaticBody2D"]
+position = Vector2(-2, 1)
+polygon = PackedVector2Array(-135, -232, -192, -230, -170, 94, 255, 105, 251, -204, -134, -207, -134, -178, 229, -180, 230, 75, -152, 74, -154, 2, -135, -2)
