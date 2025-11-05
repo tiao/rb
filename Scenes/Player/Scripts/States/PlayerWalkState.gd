@@ -21,11 +21,11 @@ func Update(delta : float):
 	Move(input_dir)
 	LessenDash(delta)
 
-	if(Input.is_action_just_pressed("Dash") && can_dash):
-		start_dash(input_dir)
+	#if(Input.is_action_just_pressed("Dash") && can_dash):
+		#start_dash(input_dir)
 		
-	if Input.is_action_just_pressed("Punch") or Input.is_action_just_pressed("Kick"):
-		Transition("Attacking")
+	#if Input.is_action_just_pressed("Punch") or Input.is_action_just_pressed("Kick"):
+		#Transition("Attacking")
 	
 func Move(input_dir : Vector2):
 	#Suddenly turning mid dash
