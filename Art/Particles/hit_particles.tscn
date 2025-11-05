@@ -3,8 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://bw36ig60cpuaq" path="res://Art/Sprites/Square.png" id="1_ofkul"]
 
 [sub_resource type="Curve" id="Curve_8xg4l"]
-min_value = -604.54
-max_value = -199.99
+_limits = [-604.54, -199.99, 0.0, 1.0]
 _data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.12, -24.1758), 0.0, 0.0, 0, 0]
 point_count = 2
 
@@ -36,9 +35,9 @@ position = Vector2(-14.5, 6)
 rotation = 3.14159
 emitting = false
 amount = 200
-process_material = SubResource("ParticleProcessMaterial_jpb8y")
 texture = ExtResource("1_ofkul")
 lifetime = 0.25
 one_shot = true
 explosiveness = 1.0
 visibility_rect = Rect2(0, 0, 1, 1)
+process_material = SubResource("ParticleProcessMaterial_jpb8y")

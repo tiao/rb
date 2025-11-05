@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://bblpsy4fvi76f"]
 
 [ext_resource type="Texture2D" uid="uid://bw36ig60cpuaq" path="res://Art/Sprites/Square.png" id="1_4gerp"]
-[ext_resource type="Script" path="res://Scripts/CoinPickup.gd" id="2_c7iqs"]
+[ext_resource type="Script" uid="uid://c2n1b8fg738fw" path="res://Scripts/CoinPickup.gd" id="2_c7iqs"]
 [ext_resource type="Texture2D" uid="uid://dyb5iqfj3tmwj" path="res://Art/Sprites/light.png" id="3_o4d4t"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ea2ve"]
@@ -63,7 +63,6 @@ shape = SubResource("CircleShape2D_ea2ve")
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
 amount = 40
-process_material = SubResource("ParticleProcessMaterial_7swun")
 texture = ExtResource("1_4gerp")
 lifetime = 0.8
 preprocess = 0.8
@@ -74,5 +73,6 @@ fract_delta = false
 trail_lifetime = 0.4
 trail_sections = 2
 trail_section_subdivisions = 1
+process_material = SubResource("ParticleProcessMaterial_7swun")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

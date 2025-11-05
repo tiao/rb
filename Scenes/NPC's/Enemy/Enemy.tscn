@@ -1,7 +1,7 @@
 [gd_scene load_steps=44 format=3 uid="uid://bvt7e871e6jeg"]
 
 [ext_resource type="Texture2D" uid="uid://d3u5e5gpffpwe" path="res://Scenes/NPC's/Enemy/Sprites/Enemy09.png" id="1_chwbu"]
-[ext_resource type="Script" path="res://Scenes/NPC's/Enemy/Scripts/EnemyMain.gd" id="1_db41y"]
+[ext_resource type="Script" uid="uid://baq681hgr7s66" path="res://Scenes/NPC's/Enemy/Scripts/EnemyMain.gd" id="1_db41y"]
 [ext_resource type="Texture2D" uid="uid://de0yo10inq5nw" path="res://Scenes/NPC's/Enemy/Sprites/Enemy10.png" id="2_jk28b"]
 [ext_resource type="Texture2D" uid="uid://blvrwqioo13gp" path="res://Scenes/NPC's/Enemy/Sprites/Enemy11.png" id="3_sc4cj"]
 [ext_resource type="Texture2D" uid="uid://qant813fe8we" path="res://Scenes/NPC's/Enemy/Sprites/Enemy12.png" id="4_nu70l"]
@@ -21,13 +21,13 @@
 [ext_resource type="Texture2D" uid="uid://wrtjha73ctxn" path="res://Scenes/NPC's/Enemy/Sprites/Enemy06.png" id="18_gw8il"]
 [ext_resource type="Texture2D" uid="uid://cjckvbu5dwn7e" path="res://Scenes/NPC's/Enemy/Sprites/Enemy07.png" id="19_cja05"]
 [ext_resource type="PackedScene" uid="uid://b82yimbxiflml" path="res://Art/Particles/hit_particles.tscn" id="21_d5isq"]
-[ext_resource type="Script" path="res://Scripts/FSM/FiniteStateMachine.gd" id="21_mb2dn"]
-[ext_resource type="Script" path="res://Scenes/NPC's/Enemy/Scripts/States/EnemyIdleState.gd" id="21_mks5l"]
-[ext_resource type="Script" path="res://Scenes/NPC's/Enemy/Scripts/States/EnemyChaseState.gd" id="24_pg8mu"]
-[ext_resource type="Script" path="res://Scenes/NPC's/Enemy/Scripts/States/EnemyAttackState.gd" id="25_osvb1"]
-[ext_resource type="Script" path="res://Scripts/AttackData.gd" id="26_b28qd"]
+[ext_resource type="Script" uid="uid://bbf00i841rkdr" path="res://Scripts/FSM/FiniteStateMachine.gd" id="21_mb2dn"]
+[ext_resource type="Script" uid="uid://vtt0clunndu0" path="res://Scenes/NPC's/Enemy/Scripts/States/EnemyIdleState.gd" id="21_mks5l"]
+[ext_resource type="Script" uid="uid://th6phvjfxn80" path="res://Scenes/NPC's/Enemy/Scripts/States/EnemyChaseState.gd" id="24_pg8mu"]
+[ext_resource type="Script" uid="uid://qfu013pmpt61" path="res://Scenes/NPC's/Enemy/Scripts/States/EnemyAttackState.gd" id="25_osvb1"]
+[ext_resource type="Script" uid="uid://ffyafp8ks6d1" path="res://Scripts/AttackData.gd" id="26_b28qd"]
 [ext_resource type="Texture2D" uid="uid://bw36ig60cpuaq" path="res://Art/Sprites/Square.png" id="27_0oljh"]
-[ext_resource type="Script" path="res://Scenes/NPC's/Enemy/Scripts/States/EnemyDeathState.gd" id="27_m2jmx"]
+[ext_resource type="Script" uid="uid://co4ie0arrsoa5" path="res://Scenes/NPC's/Enemy/Scripts/States/EnemyDeathState.gd" id="27_m2jmx"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_toimg"]
 animations = [{
@@ -307,10 +307,10 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_i1jlq"]
 _data = {
-"Attack": SubResource("Animation_pya5h"),
-"Chasing": SubResource("Animation_vh18e"),
-"Death": SubResource("Animation_1r6mx"),
-"Idle": SubResource("Animation_lw05y")
+&"Attack": SubResource("Animation_pya5h"),
+&"Chasing": SubResource("Animation_vh18e"),
+&"Death": SubResource("Animation_1r6mx"),
+&"Idle": SubResource("Animation_lw05y")
 }
 
 [node name="Enemy" type="CharacterBody2D" node_paths=PackedStringArray("attack_node", "chase_node", "sprite", "healthbar", "hit_particles") groups=["Enemy"]]
@@ -393,14 +393,14 @@ show_percentage = false
 [node name="HitParticles" type="GPUParticles2D" parent="."]
 emitting = false
 amount = 60
-process_material = SubResource("ParticleProcessMaterial_6o6nb")
 texture = ExtResource("27_0oljh")
 one_shot = true
 explosiveness = 0.9
+process_material = SubResource("ParticleProcessMaterial_6o6nb")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_i1jlq")
+&"": SubResource("AnimationLibrary_i1jlq")
 }
 autoplay = "Idle"
 

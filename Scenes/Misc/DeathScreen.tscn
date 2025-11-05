@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://h61y6jpdtysp"]
 
-[ext_resource type="Script" path="res://Scripts/Reset.gd" id="1_y2wu1"]
+[ext_resource type="Script" uid="uid://f66ej1ssvsvr" path="res://Scripts/Reset.gd" id="1_y2wu1"]
 [ext_resource type="LabelSettings" uid="uid://1cnb4418rr7" path="res://Art/Fonts/pixelized_label_large.tres" id="2_k8myw"]
 
 [node name="DeathScreen" type="CanvasLayer"]

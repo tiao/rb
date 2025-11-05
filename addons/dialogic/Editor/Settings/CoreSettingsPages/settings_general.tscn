@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://b873ho41sklv8"]
 
-[ext_resource type="Script" uid="uid://chb81lvjh47jr" path="res://addons/dialogic/Editor/Settings/CoreSettingsPages/settings_general.gd" id="2"]
-[ext_resource type="Script" uid="uid://bo0dfmsyky1mm" path="res://addons/dialogic/Editor/Settings/CoreSettingsPages/settings_tools.gd" id="2_3xeuv"]
+[ext_resource type="Script" uid="uid://dma6joyhqyaub" path="res://addons/dialogic/Editor/Settings/CoreSettingsPages/settings_general.gd" id="2"]
+[ext_resource type="Script" uid="uid://bqjtdqruhos0k" path="res://addons/dialogic/Editor/Settings/CoreSettingsPages/settings_tools.gd" id="2_3xeuv"]
 [ext_resource type="PackedScene" uid="uid://dbpkta2tjsqim" path="res://addons/dialogic/Editor/Common/hint_tooltip_icon.tscn" id="2_kqhx5"]
-[ext_resource type="Script" uid="uid://vg4wbm0n64ws" path="res://addons/dialogic/Editor/Settings/CoreSettingsPages/tool_resave.gd" id="3_dbfvv"]
+[ext_resource type="Script" uid="uid://b3rd1ot05xil1" path="res://addons/dialogic/Editor/Settings/CoreSettingsPages/tool_resave.gd" id="3_dbfvv"]
 [ext_resource type="PackedScene" uid="uid://7mvxuaulctcq" path="res://addons/dialogic/Editor/Events/Fields/field_file.tscn" id="3_i7rug"]
 
 [node name="General" type="VBoxContainer"]
@@ -76,6 +76,7 @@ selected = 0
 fit_to_longest_item = false
 item_count = 3
 popup/item_0/text = "Delete Layout Node"
+popup/item_0/id = 0
 popup/item_1/text = "Hide Layout Node"
 popup/item_1/id = 1
 popup/item_2/text = "Keep Layout Node"
@@ -188,6 +189,7 @@ layout_mode = 2
 selected = 0
 item_count = 4
 popup/item_0/text = "Event only"
+popup/item_0/id = 0
 popup/item_1/text = "Event+Subsystem"
 popup/item_1/id = 1
 popup/item_2/text = "Subsystem only"
