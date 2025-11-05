@@ -1,0 +1,68 @@
+[gd_scene load_steps=4 format=3 uid="uid://bo58b58761x4g"]
+
+[ext_resource type="Script" uid="uid://f66ej1ssvsvr" path="res://Scripts/Reset.gd" id="1_by3vj"]
+[ext_resource type="LabelSettings" uid="uid://1cnb4418rr7" path="res://Art/Fonts/pixelized_label_large.tres" id="2_fnx5b"]
+[ext_resource type="LabelSettings" uid="uid://da8inon5cmt2r" path="res://Art/Fonts/pixelized_label.tres" id="3_tdp35"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_by3vj")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -109.0
+offset_top = -225.0
+offset_right = 85.0
+offset_bottom = -170.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "ROARING BARROw"
+label_settings = ExtResource("2_fnx5b")
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -306.0
+offset_top = -412.0
+offset_right = 267.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Nova Iorque, 31 de Outubro de 1925
+
+Prezada Senhora Bowman,
+
+Espero que esta missiva a encontre em excelente saúde e espírito.
+Tenho o prazer de convidá-la para uma ocasião singular que se realizará em meu estabelecimento, o Cabaré Barrow.
+Será uma noite de grandes eventos e revelações, onde em seguida ocorrerá o aguardado leilão dos bens que 
+marcarão o futuro do cabaré.
+
+Reconheço que Lola, uma de minhas funcionárias, tem grande carinho pela senhorita e requisitou sua presença.
+Além disso, sua reputação e habilidade investigativa precedem-na, e é por isso que considero sua presença não 
+apenas desejável, mas necessária.  Há assuntos delicados que precisam de olhos atentos e discernimento apurado,
+ e conto com sua discrição e profissionalismo para garantir que tudo transcorra com a devida ordem e segurança.
+
+A recepção terá início às sete horas da noite, e será uma honra recebê-la entre os ilustres convidados que estarão 
+presentes para este momento crucial. Agradeço antecipadamente sua atenção e aguardo sua confirmação.
+
+Atenciosamente,
+ Lester Barrow
+ Proprietário do Cabaré Barrow
+
+Pressione 'E'  para continuar
+"
+label_settings = ExtResource("3_tdp35")

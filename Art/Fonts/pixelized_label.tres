@@ -1,0 +1,8 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://da8inon5cmt2r"]
+
+[sub_resource type="SystemFont" id="SystemFont_ggyc8"]
+
+[resource]
+line_spacing = 4.0
+font = SubResource("SystemFont_ggyc8")
+font_size = 10

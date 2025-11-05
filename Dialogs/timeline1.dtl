@@ -1,0 +1,30 @@
+join Abigail leftmost
+Abigail: Preciso achar Lola. Faz tempo que não a vejo.
+Abigail: Com licença. Boa noite Sr…
+join JamesGilmore rightmost
+JamesGilmore: James Gilmore, prazer
+Abigail: Prazer, Abigail Bowman.\
+Eu estava procurando por Louise Blanche, você a conhece?
+JamesGilmore: Bom… Acho que já ouvi dela, porém não.. não a conheço.
+Abigail: Espere… o seu nome me é familiar… Você escreve para o New York Times?
+JamesGilmore: Sim, escrevo. Estou aqui a trabalho inclusive, esse futuro leilão pode ser uma grande fonte de notícias.
+Abigail: Perdão pela curiosidade, mas você vai escrever sobre esse lugar?\
+Porque com essa nova lei…
+JamesGilmore: É o que eu preferia, porém infelizmente não será possível. \
+Hoje vou apenas escrever sobre os poucos convidados do leilão, o que achei curioso sabendo a fama do Sr. Barrow.
+JamesGilmore: Eu também percebi que os convites pareciam exclusivos.
+join Lola center
+Lola: Veja só quem finalmente chegou! \
+Desculpa interromper a conversa, mas estava procurando por você, Abbie.
+Abigail: Também estava ansiosa para te ver, Lis!\
+Como está a sua noite? Você ainda vai fazer uma apresentação?
+Lola: Está boa, mas o camarim está uma bagunça. \
+De última hora querem mudar nossa música de Mamie Smith para Louis Armstrong!
+Abigail: Ora essa! Imagine a confusão!
+JamesGilmore: Todos estarão presentes em sua apresentação, senhorita?
+Lola: Imagino que sim. O senhor irá documentar para o jornal?
+JamesGilmore: Apenas o que eu descobrir sobre os convidados.
+Lola: Nesse caso, posso apresentá-los a vocês.
+Abigail: Por favor!
+JamesGilmore: Claro! Por que não?
+leave Lola

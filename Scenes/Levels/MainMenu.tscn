@@ -1,0 +1,62 @@
+[gd_scene load_steps=5 format=3 uid="uid://dffcdj7m4mk5p"]
+
+[ext_resource type="Script" uid="uid://ctykha8re0rku" path="res://Scenes/Levels/main_menu.gd" id="1_mke16"]
+[ext_resource type="FontFile" uid="uid://ci60w53hdbiqe" path="res://Art/Fonts/m3x6.ttf" id="2_koonp"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_asvf5"]
+bg_color = Color(0.9137255, 0.11764706, 0.12941177, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 8
+
+[sub_resource type="LabelSettings" id="LabelSettings_d2tbo"]
+font = ExtResource("2_koonp")
+font_size = 120
+outline_size = 6
+outline_color = Color(0.93268275, 0.119651206, 0.1319857, 0.98039216)
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mke16")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.669
+anchor_right = 0.5
+anchor_bottom = 0.669
+offset_left = -115.0
+offset_top = -33.120026
+offset_right = 124.0
+offset_bottom = 32.879974
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_asvf5")
+text = "Começar"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 131.0
+offset_top = 45.0
+offset_right = 558.0
+offset_bottom = 140.0
+text = "Roaring Barrow"
+label_settings = SubResource("LabelSettings_d2tbo")
+
+[connection signal="pressed" from="Button" to="." method="_on_start_pressed"]

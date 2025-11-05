@@ -1,0 +1,37 @@
+join Abigail leftmost
+join Lola center
+Lola: Boa noite, Vivianne! Boa noite Sr. Knight!
+join David right
+David: Boa noite, Louise.
+join Vivianne rightmost
+Vivianne: Boa noite.
+Lola: Quero apresentar-lhes Abigail Bowman, uma incrível detetive. E o se-
+join JamesGilmore left [mirrored="true"]
+JamesGilmore: James Gilmore, prazer. Vivianne Barrett, correto?
+Vivianne: Só Viviane, por favor.
+Abigail: Prazer em conhecê-los!\
+Como vocês conhecem o Sr. Barrow?
+Vivianne: De certo modo, estou trabalhando esta noite.\
+Normalmente trabalho para o Sr. Knight como enfermeira, mas hoje estou a serviço do Dono também.
+David: Fiz isso por todos os anos que o conheço e pelo convite à essa festa.
+JamesGilmore: Um pouco vago, não acha?
+David: Diz isso porque precisa de mais informações para sua pequena matéria?
+leave Lola
+join HarveyPaulsen center
+HarveyPaulsen: Agora sim temos uma festa! Muitos para conhecer!\
+Harvey Paulsen, ao seu dispor.
+HarveyPaulsen: Srta. Bowman, você que é a famosa detetive, estou certo?
+Abigail: Bom, eu...
+HarveyPaulsen: Sim, acredito que estou. Que sorte a sua, os convites andam tão seletivos ultimamente
+Abigail: Eu fui convidada por causa de meus contatos, senhor.\
+Além de meus talentos e minha fama como detetive.
+HarveyPaulsen: No tópico de contatos, ainda preciso conversar com o nosso anfitrião sobre o motivo desta reunião.
+JamesGilmore: Eu também fiquei curioso com a seleção de convidados.
+David: Lester escolheu pessoas interessadas pela sua vida econômica.\
+Aparentemente ele vai ser um importante contribuidor amanhã.
+David: Me pergunto o que seria tão importante…
+leave HarveyPaulsen
+join LesterBarrow center
+LesterBarrow: Não se preocupe, caro amigo, logo revelarei esse mistério.\
+Boa noite a todos, Lola veio me avisar que todos já chegaram.
+LesterBarrow: Vamos ir ao bar, é uma área bem mais confortável do que ficar em pé no meio do salão.
