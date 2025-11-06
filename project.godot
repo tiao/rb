@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="RB"
-config/description="This 2D Pixelart, TopDown action Starter Project include all the basics you need to get started creating a game."
+config/description="This 2D Pixelart, TopDown Project used on workclass on Ser!"
 config/version="1.5"
 config/tags=PackedStringArray("starterkit")
 run/main_scene="uid://dffcdj7m4mk5p"
@@ -98,7 +98,7 @@ window/vsync/vsync_mode=0
 
 [dotnet]
 
-project/assembly_name="Topdown Starter"
+project/assembly_name="Roaring Barrow"
 
 [editor_plugins]
 

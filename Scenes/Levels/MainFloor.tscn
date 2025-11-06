@@ -1,9 +1,11 @@
-[gd_scene load_steps=33 format=4 uid="uid://dei3j88yw6omf"]
+[gd_scene load_steps=38 format=4 uid="uid://dei3j88yw6omf"]
 
 [ext_resource type="PackedScene" uid="uid://bvg5dny32iw0x" path="res://Scenes/Player/Player.tscn" id="1_v023b"]
 [ext_resource type="PackedScene" uid="uid://bblpsy4fvi76f" path="res://Scenes/Interactables/Coin.tscn" id="3_qfkdr"]
+[ext_resource type="PackedScene" uid="uid://in1mwnayrk8m" path="res://Scenes/NPC's/SOLDADO DAVID/David.tscn" id="3_rdp63"]
 [ext_resource type="PackedScene" uid="uid://cx8kkqawojm0m" path="res://Scenes/Misc/SceneSettings.tscn" id="4_8uhxl"]
 [ext_resource type="Texture2D" uid="uid://dyb5iqfj3tmwj" path="res://Art/Sprites/light.png" id="5_numcg"]
+[ext_resource type="PackedScene" uid="uid://b21idwqw3gk77" path="res://Scenes/NPC's/MÉDICA VIVIANNE/Medica.tscn" id="7_gt5fq"]
 [ext_resource type="TileSet" uid="uid://b3n0bklwwny1b" path="res://Art/TileMap.tres" id="7_n5jbx"]
 [ext_resource type="LabelSettings" uid="uid://da8inon5cmt2r" path="res://Art/Fonts/pixelized_label.tres" id="7_tuycv"]
 [ext_resource type="PackedScene" uid="uid://ckp2r52hlcfxn" path="res://Scenes/NPC's/Npc_OfficeWorker/npc_officeworker_scene.tscn" id="8_30ow3"]
@@ -16,6 +18,9 @@
 [ext_resource type="Script" uid="uid://cvivkyitgxoqf" path="res://Scripts/QuestGeneral/Quest.gd" id="14_itxyw"]
 [ext_resource type="Texture2D" uid="uid://bnmgp72dk7oub" path="res://Scenes/Misc/biblioteca.png" id="15_5jlu8"]
 [ext_resource type="Texture2D" uid="uid://cryymykgj41s7" path="res://Scenes/Levels/bar.png" id="15_bkbvh"]
+[ext_resource type="PackedScene" uid="uid://cu4jmg81o35od" path="res://Scenes/NPC's/DANÇARINA LOLA/Lola.tscn" id="17_k7rv1"]
+[ext_resource type="PackedScene" uid="uid://cxyfv44h3xaw3" path="res://Scenes/NPC's/LESTER BARROW/Lester.tscn" id="19_rcobd"]
+[ext_resource type="PackedScene" uid="uid://c5coi8njoq1xc" path="res://Scenes/NPC's/MAGNATA HARVEY/Magnata.tscn" id="20_gmoma"]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_bkbvh"]
 a = Vector2(0.00012207031, 183.33315)
@@ -61,7 +66,7 @@ b = Vector2(69, 79)
 b = Vector2(0, 246)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rcobd"]
-size = Vector2(222.25, 32.75)
+size = Vector2(234.125, 70.375)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gmoma"]
 size = Vector2(97.5, 28.5)
@@ -81,12 +86,24 @@ position = Vector2(-85, -117)
 
 [node name="NPCs" type="Node" parent="."]
 
-[node name="NPC" parent="NPCs" instance=ExtResource("8_30ow3")]
-position = Vector2(83, 260)
+[node name="Lola" parent="NPCs" instance=ExtResource("17_k7rv1")]
+position = Vector2(-60, 104)
+
+[node name="David" parent="NPCs" instance=ExtResource("3_rdp63")]
+position = Vector2(-95, 262)
 
 [node name="NPC2" parent="NPCs" instance=ExtResource("8_30ow3")]
 position = Vector2(-108, 104)
 line1 = ["Hello! Everything is fine! Nothing to see here! "]
+
+[node name="Lester" parent="NPCs" instance=ExtResource("19_rcobd")]
+position = Vector2(-125, 321)
+
+[node name="Magnata" parent="NPCs" instance=ExtResource("20_gmoma")]
+position = Vector2(-44, 313)
+
+[node name="Medica" parent="NPCs" instance=ExtResource("7_gt5fq")]
+position = Vector2(-82, 147)
 
 [node name="Pickups" type="Node" parent="."]
 
@@ -153,6 +170,7 @@ texture = ExtResource("5_numcg")
 [node name="AreaBlocker" parent="Scene" instance=ExtResource("8_hs0w2")]
 
 [node name="AreaExit" parent="Scene" instance=ExtResource("8_s7mva")]
+visible = false
 next_scene = ExtResource("10_hj57s")
 
 [node name="TileMap" type="TileMapLayer" parent="Scene"]
@@ -293,7 +311,7 @@ position = Vector2(273, -39)
 shape = SubResource("SegmentShape2D_rdp63")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="TextureRect_escritorio/StaticBody2D"]
-position = Vector2(169, 15)
+position = Vector2(163.0625, -3.8125)
 shape = SubResource("RectangleShape2D_rcobd")
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="TextureRect_escritorio/StaticBody2D"]

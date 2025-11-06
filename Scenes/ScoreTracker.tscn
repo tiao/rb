@@ -17,6 +17,7 @@ script = ExtResource("1_3k7kl")
 money_label = NodePath("MoneyLabel")
 
 [node name="MoneyLabel" type="Label" parent="GameUI"]
+visible = false
 z_index = 1
 layout_mode = 0
 offset_left = 533.0

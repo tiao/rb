@@ -1,0 +1,66 @@
+[gd_scene load_steps=8 format=3 uid="uid://c5coi8njoq1xc"]
+
+[ext_resource type="Script" uid="uid://bhtv33qcnpy3q" path="res://Scenes/NPC's/Npc_OfficeWorker/NpcDialogueScript.gd" id="1_aqdiy"]
+[ext_resource type="Texture2D" uid="uid://do4qaj60673q6" path="res://Scenes/NPC's/MAGNATA HARVEY/32 magnata front.png" id="2_x4a3u"]
+[ext_resource type="Texture2D" uid="uid://dyo1271keg36v" path="res://Scenes/NPC's/MAGNATA HARVEY/32 magnata side.png" id="3_hlege"]
+[ext_resource type="LabelSettings" uid="uid://da8inon5cmt2r" path="res://Art/Fonts/pixelized_label.tres" id="4_dp0b1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_t56sl"]
+radius = 21.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l6yr8"]
+animations = [{
+"frames": [{
+"duration": 3.0,
+"texture": ExtResource("2_x4a3u")
+}, {
+"duration": 2.0,
+"texture": ExtResource("3_hlege")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pxhik"]
+radius = 13.0
+
+[node name="Magnata" type="Area2D" node_paths=PackedStringArray("speech")]
+script = ExtResource("1_aqdiy")
+speech = NodePath("NPC/CenterContainer/Label")
+line1 = ["Hello!", "Welcome!", "They don't pay me enough for this"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_t56sl")
+
+[node name="NPC" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_l6yr8")
+autoplay = "default"
+frame_progress = 0.4813001
+
+[node name="StaticBody2D" type="StaticBody2D" parent="NPC"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC/StaticBody2D"]
+position = Vector2(1, 5)
+shape = SubResource("CircleShape2D_pxhik")
+
+[node name="CenterContainer" type="CenterContainer" parent="NPC"]
+visible = false
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = -0.79
+anchor_right = 0.5
+offset_left = -167.0
+offset_top = -20.72
+offset_right = 137.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="NPC/CenterContainer"]
+layout_mode = 2
+text = "I talk to the player!"
+label_settings = ExtResource("4_dp0b1")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

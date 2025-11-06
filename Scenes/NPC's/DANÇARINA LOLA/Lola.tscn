@@ -1,0 +1,83 @@
+[gd_scene load_steps=10 format=3 uid="uid://cu4jmg81o35od"]
+
+[ext_resource type="Script" uid="uid://bhtv33qcnpy3q" path="res://Scenes/NPC's/Npc_OfficeWorker/NpcDialogueScript.gd" id="1_s1idp"]
+[ext_resource type="Texture2D" uid="uid://bmisvladpwru0" path="res://Scenes/NPC's/DANÇARINA LOLA/32-download(7).png" id="2_3dcjn"]
+[ext_resource type="Texture2D" uid="uid://bq28vvrd36vp" path="res://Scenes/NPC's/DANÇARINA LOLA/32-download(idle).png" id="3_ap8mw"]
+[ext_resource type="Texture2D" uid="uid://coi4uyxe56m4s" path="res://Scenes/NPC's/DANÇARINA LOLA/32-download(5).png" id="4_xhvu4"]
+[ext_resource type="Texture2D" uid="uid://kp853cg4qvof" path="res://Scenes/NPC's/DANÇARINA LOLA/32-download(6).png" id="5_t65pp"]
+[ext_resource type="LabelSettings" uid="uid://da8inon5cmt2r" path="res://Art/Fonts/pixelized_label.tres" id="6_2loc1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_t56sl"]
+radius = 21.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l6yr8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_3dcjn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ap8mw")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_3dcjn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_xhvu4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_3dcjn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_t65pp")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 3.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pxhik"]
+radius = 13.0
+
+[node name="Lola" type="Area2D" node_paths=PackedStringArray("speech")]
+script = ExtResource("1_s1idp")
+speech = NodePath("NPC/CenterContainer/Label")
+line1 = ["Hello!", "Welcome!", "They don't pay me enough for this"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_t56sl")
+
+[node name="NPC" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_l6yr8")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.11503313
+
+[node name="StaticBody2D" type="StaticBody2D" parent="NPC"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC/StaticBody2D"]
+position = Vector2(1, 5)
+shape = SubResource("CircleShape2D_pxhik")
+
+[node name="CenterContainer" type="CenterContainer" parent="NPC"]
+visible = false
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = -0.79
+anchor_right = 0.5
+offset_left = -167.0
+offset_top = -20.72
+offset_right = 137.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="NPC/CenterContainer"]
+layout_mode = 2
+text = "I talk to the player!"
+label_settings = ExtResource("6_2loc1")
