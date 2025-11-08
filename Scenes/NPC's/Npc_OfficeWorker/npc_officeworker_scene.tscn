@@ -6,7 +6,7 @@
 [ext_resource type="LabelSettings" uid="uid://da8inon5cmt2r" path="res://Art/Fonts/pixelized_label.tres" id="4_lx2dj"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_t56sl"]
-radius = 29.017237
+radius = 44.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_l6yr8"]
 animations = [{

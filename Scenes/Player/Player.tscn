@@ -41,7 +41,7 @@
 [ext_resource type="LabelSettings" uid="uid://1cnb4418rr7" path="res://Art/Fonts/pixelized_label_large.tres" id="34_aqkdi"]
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_uky13"]
-polygon = PackedVector2Array(-1, -12, -5, -11, -8, -8, -7, -2, -4, 2, -4, 10, 5, 10, 5, 1, 7, -3, 8, -7, 4, -11)
+polygon = PackedVector2Array(-1, -12, -5, -11, -6, -7, -5, -2, -2, 0, -4, 10, 5, 10, 3, 1, 5, -3, 4, -7, 3, -11)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vax36"]
 animations = [{
@@ -184,8 +184,7 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_mkwab"]
 radius = 25.0
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_7m131"]
-radius = 8.06226
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vrod0"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ub6e5"]
 bg_color = Color(0.0352941, 0.0156863, 0.00784314, 0.427451)
@@ -567,8 +566,8 @@ shape = SubResource("CircleShape2D_mkwab")
 disabled = true
 
 [node name="BodyCollisionShape" type="CollisionShape2D" parent="."]
-position = Vector2(0, 7)
-shape = SubResource("CircleShape2D_7m131")
+position = Vector2(0, 2)
+shape = SubResource("CapsuleShape2D_vrod0")
 
 [node name="FSM" type="Node" parent="." node_paths=PackedStringArray("initial_state")]
 script = ExtResource("21_54cjv")

@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dffcdj7m4mk5p"]
 
-[ext_resource type="Script" uid="uid://32ctmfvgr3w8" path="res://Scenes/Levels/main_menu.gd" id="1_mke16"]
+[ext_resource type="Script" uid="uid://ctykha8re0rku" path="res://Scenes/Levels/main_menu.gd" id="1_mke16"]
 [ext_resource type="FontFile" uid="uid://ci60w53hdbiqe" path="res://Art/Fonts/m3x6.ttf" id="2_koonp"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_asvf5"]

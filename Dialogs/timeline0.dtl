@@ -13,5 +13,3 @@ label Escolha (a)
 	jump Escolha
 - Speakeasy
 	Recepcionista: Exato! Seja bem vinda.
-do GameManager.reset_money()
-bye

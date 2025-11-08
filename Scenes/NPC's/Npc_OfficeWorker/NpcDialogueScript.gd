@@ -13,7 +13,6 @@ var player_entered = false
 
 func _ready():
 	#speech.text = ""
-	print(get_node("."))
 	pass
 
 func _input(event: InputEvent) -> void:

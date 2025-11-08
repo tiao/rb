@@ -20,7 +20,7 @@ JamesGilmore: Como já mencionei, também esperava mais convidados.
 Abigail: De um jeito ou de outro, ele chamou um jornalista e uma detetive.
 Abigail: Então provavelmente ele tem algo mais planejado.
 Abigail: Pode ser tranquilizado em relação à sua matéria.
-join Lola right
+join Lola rightmost
 Lola: Agora acho que está tudo certo, só preciso passar pelo camarim daqui um tempo.
 Lola: Finalmente posso ter um pouco de paz essa noite não é, Abbie?
 Abigail: Finalmente. Você realmente tem trabalhado bastante para o Sr. Barrow.
@@ -43,6 +43,8 @@ JamesGilmore: Saberia do que?
 Abigail: … Quer saber? Esqueça o que eu disse.
 Abigail: Eu só realmente preciso conversar com Lis depois de tudo isso.
 as luzes são cortadas
+do GameManager.hide_lester()
+do GameManager.show_lester_dead()
 
 Abigail: …
 JamesGilmore: O que foi isso?
@@ -56,14 +58,13 @@ JamesGilmore: …
 Abigail: Foi o que pensei.
 Então você precisa achar um jeito de chegar à entrada e clicar na caixa de luz.
 Abigail: Finalmente, minha cabeça já estava doendo.
-join HarveyPaulsen center
+join HarveyPaulsen right
 HarveyPaulsen: Então foi você quem mexeu com as luzes!
 HarveyPaulsen: O que pensa que está fazendo?
 Abigail: Eu?! Eu consertei as luzes.
 Abigail: Na verdade só as liguei, não teve nenhum problema, mas alguém quis ser engraçado, apagando todas as luzes.
 HarveyPaulsen: Ah, por favor-
 Todos ouvem um grito vindo do escritório e vão correndo para lá.
-do GameManager.reset_money()
 A Lola está virada de costas para a porta do escritório.
 Abigail: Louise?
 Abigail: O que aconteceu, por que você estava gritando?
@@ -71,11 +72,11 @@ Abigail: Meu Deus ela está tremendo.
 Lola: Só olhe lá dentro por favor.
 Todos entram no escritório vendo o Sr. Barrow morto.
 Vivianne: Com licença, deixe-me passar, talvez eu consiga ajudá-lo
-join David center
+join David rightmost
 David: Como? Ele está claramente morto.
 Abigail: Talvez ele não esteja, deixe-a tentar.
 todos esperam ansiosamente pela resposta da médica
-join Vivianne center
+join Vivianne left
 Vivianne: … Eu, eu pensei que talvez eu conseguisse ajudar com ferimento, mas não tem nada… e ele está morto.
 David: …Eu avisei!
 Abigail: Ah claro, muito obrigada por avisar que ele já estava morto!

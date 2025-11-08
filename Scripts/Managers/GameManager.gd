@@ -21,3 +21,15 @@ func load_next_level(next_scene : PackedScene):
 
 func load_same_level():
 	get_tree().reload_current_scene()
+
+func hide_lester():
+	var root = get_tree().current_scene
+	var lester = root.find_child("Lester", true, false) # Search for Lester recursively, not owned by another scene
+	if lester:
+		lester.visible = false
+
+func show_lester_dead():
+	var root = get_tree().current_scene
+	var lester = root.find_child("LesterDead", true, false) # Search for Lester recursively, not owned by another scene
+	if lester:
+		lester.visible = true
