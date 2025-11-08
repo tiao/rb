@@ -1,25 +1,27 @@
 join Abigail leftmost
 join JamesGilmore center
-JamesGilmore: Essa conversa foi muito interessante para minha matéria. 
+JamesGilmore: Essa conversa foi muito interessante para minha matéria.
 JamesGilmore: Tenho que agradecer você, Srta. Bowman.
 Abigail: É só um instinto de curiosidade. Força do hábito.
+join Vivianne left
 Vivianne: Me desculpe senhor, mas o Sr. Barrow o convidou de última hora?
 Vivianne: Não me recordo de um aviso sobre os jornais no convite.
-JamesGilmore: Sim, o Sr. Barrow me pediu um favor. 
+JamesGilmore: Sim, o Sr. Barrow me pediu um favor.
 JamesGilmore: E eu aceitei porque me parecia uma ótima matéria.
 Vivianne: Sendo sincera, até agora achei que seria bem mais interessante.
 Vivianne: Ainda mais com as bebidas.
 …
-Vivianne: Desculpa… 
+Vivianne: Desculpa…
 Vivianne: Bom eu vou voltar para o Sr. Knight. Tentar achá-lo pelo menos
 Vivianne sai do bar
+leave Vivianne
 JamesGilmore: Odeio admitir, mas ela está certa, conhecendo o histórico do Sr. Barrow imaginava algo mais interessante.
 JamesGilmore: Como já mencionei, também esperava mais convidados.
 Abigail: De um jeito ou de outro, ele chamou um jornalista e uma detetive.
 Abigail: Então provavelmente ele tem algo mais planejado.
 Abigail: Pode ser tranquilizado em relação à sua matéria.
-join Lola right 
-Lola: Agora acho que está tudo certo, só preciso passar pelo camarim daqui um tempo. 
+join Lola right
+Lola: Agora acho que está tudo certo, só preciso passar pelo camarim daqui um tempo.
 Lola: Finalmente posso ter um pouco de paz essa noite não é, Abbie?
 Abigail: Finalmente. Você realmente tem trabalhado bastante para o Sr. Barrow.
 Abigail: Você sabe que não precisa fazer tudo que ele te pede certo?
@@ -27,13 +29,13 @@ Lola: Eu sei…
 JamesGilmore: Algum dia alguém vai acabar com esse tipo de coisa.
 JamesGilmore: Se Deus quiser isso virá rápido.
 Abigail: Eu realmente sinto que eu estou com uma página faltando
-join Daniel center   
+join Daniel center
 Daniel: Srta. Louise, acredito que esses charutos  sejam de seu empregador.
-leave Daniel 
+leave Daniel
 Lola: Ai céus, eu pensei que ele já estava com eles!
-Lola: Com licença, preciso levar isso para o escritório. 
+Lola: Com licença, preciso levar isso para o escritório.
 Lola: Parece que ele está brincando comigo. Como eu tenho ido e voltado daquele corredor…
-leave Lola 
+leave Lola
 JamesGilmore: Ela sempre faz coisas assim, não concorda?
 Abigail: Como você saberia?
 JamesGilmore: …
@@ -41,6 +43,7 @@ JamesGilmore: Saberia do que?
 Abigail: … Quer saber? Esqueça o que eu disse.
 Abigail: Eu só realmente preciso conversar com Lis depois de tudo isso.
 as luzes são cortadas
+
 Abigail: …
 JamesGilmore: O que foi isso?
 Abigail: Eu não sei.
@@ -53,13 +56,14 @@ JamesGilmore: …
 Abigail: Foi o que pensei.
 Então você precisa achar um jeito de chegar à entrada e clicar na caixa de luz.
 Abigail: Finalmente, minha cabeça já estava doendo.
-join HarveyPaulsen center 
+join HarveyPaulsen center
 HarveyPaulsen: Então foi você quem mexeu com as luzes!
 HarveyPaulsen: O que pensa que está fazendo?
 Abigail: Eu?! Eu consertei as luzes.
 Abigail: Na verdade só as liguei, não teve nenhum problema, mas alguém quis ser engraçado, apagando todas as luzes.
 HarveyPaulsen: Ah, por favor-
 Todos ouvem um grito vindo do escritório e vão correndo para lá.
+do GameManager.reset_money()
 A Lola está virada de costas para a porta do escritório.
 Abigail: Louise?
 Abigail: O que aconteceu, por que você estava gritando?
@@ -67,9 +71,11 @@ Abigail: Meu Deus ela está tremendo.
 Lola: Só olhe lá dentro por favor.
 Todos entram no escritório vendo o Sr. Barrow morto.
 Vivianne: Com licença, deixe-me passar, talvez eu consiga ajudá-lo
+join David center
 David: Como? Ele está claramente morto.
 Abigail: Talvez ele não esteja, deixe-a tentar.
 todos esperam ansiosamente pela resposta da médica
+join Vivianne center
 Vivianne: … Eu, eu pensei que talvez eu conseguisse ajudar com ferimento, mas não tem nada… e ele está morto.
 David: …Eu avisei!
 Abigail: Ah claro, muito obrigada por avisar que ele já estava morto!

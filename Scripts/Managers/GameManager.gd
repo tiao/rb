@@ -1,8 +1,11 @@
 extends Node
 
 var money = 0
+var timeline0 = false
 var timeline1 = false
 var timeline2 = false
+var timeline3 = false
+var timeline4 = false
 #NOTE This class is our game manager and handles the players money and loading scenes
 #These functions can be called globally from anywhere
 

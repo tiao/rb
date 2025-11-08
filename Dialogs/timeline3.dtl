@@ -35,7 +35,9 @@ Lola: porém já o ouvi resmungando muita coisa do Sr.Paulsen.
 Lola: Pode estar enganada, mas realmente o estranhei.
 Abigail: Será que é por isso que está aqui hoje?
 Lola: Talvez…
-O seu dirty martini senhorita.
+join Barman center 
+Barman: O seu dirty martini senhorita.
+leave Barman
 Lola: Inclusive, você percebeu a “família” ali do fundo?
 Abigail: Família?
 Lola: Sim, o Sr. Paulsen pediu inclusive para o filho tirar seu sobrenome depois de… alguma briga, aparentemente.
@@ -76,4 +78,3 @@ HarveyPaulsen: Vamos David.
 leave HarveyPaulsen
 leave David
 Lola vai para o escritório e o soldado e o magnata se afastam das meninas
-jump timeline4/

@@ -1,0 +1,17 @@
+join Abigail leftmost
+join Recepcionista center
+Recepcionista: Bom noite, como posso ajuda-la?
+Abigail: Vim a convite do Sr. Barrow.
+Recepcionista: Qual a senha da noite?
+Abigail: Senha? A Passkey...
+label Escolha (a)
+- Empire State
+	Recepcionista: Wrong!
+	jump Escolha
+- Louvre
+	Recepcionista: Non
+	jump Escolha
+- Speakeasy
+	Recepcionista: Exato! Seja bem vinda.
+do GameManager.reset_money()
+bye
