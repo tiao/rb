@@ -25,6 +25,7 @@ Abigail: Bom, eu...
 HarveyPaulsen: Sim, acredito que estou. Que sorte a sua, os convites andam tão seletivos ultimamente
 Abigail: Eu fui convidada por causa de meus contatos, senhor.\
 Além de meus talentos e minha fama como detetive.
+HarveyPaulsen: Depois da Guerra não é tão difícil…
 HarveyPaulsen: No tópico de contatos, ainda preciso conversar com o nosso anfitrião sobre o motivo desta reunião.
 JamesGilmore: Eu também fiquei curioso com a seleção de convidados.
 David: Lester escolheu pessoas interessadas pela sua vida econômica.\
@@ -35,3 +36,4 @@ join LesterBarrow center
 LesterBarrow: Não se preocupe, caro amigo, logo revelarei esse mistério.\
 Boa noite a todos, Lola veio me avisar que todos já chegaram.
 LesterBarrow: Vamos ir ao bar, é uma área bem mais confortável do que ficar em pé no meio do salão.
+jump timeline3/

@@ -6,13 +6,14 @@ JamesGilmore: James Gilmore, prazer
 Abigail: Prazer, Abigail Bowman.\
 Eu estava procurando por Louise Blanche, você a conhece?
 JamesGilmore: Bom… Acho que já ouvi dela, porém não.. não a conheço.
+Abigail: Ah, obrigada do mesmo jeito.
 Abigail: Espere… o seu nome me é familiar… Você escreve para o New York Times?
 JamesGilmore: Sim, escrevo. Estou aqui a trabalho inclusive, esse futuro leilão pode ser uma grande fonte de notícias.
 Abigail: Perdão pela curiosidade, mas você vai escrever sobre esse lugar?\
 Porque com essa nova lei…
 JamesGilmore: É o que eu preferia, porém infelizmente não será possível. \
 Hoje vou apenas escrever sobre os poucos convidados do leilão, o que achei curioso sabendo a fama do Sr. Barrow.
-JamesGilmore: Eu também percebi que os convites pareciam exclusivos.
+Abigail: Eu também percebi que os convites pareciam exclusivos.
 join Lola center
 Lola: Veja só quem finalmente chegou! \
 Desculpa interromper a conversa, mas estava procurando por você, Abbie.
@@ -28,3 +29,4 @@ Lola: Nesse caso, posso apresentá-los a vocês.
 Abigail: Por favor!
 JamesGilmore: Claro! Por que não?
 leave Lola
+jump timeline2/

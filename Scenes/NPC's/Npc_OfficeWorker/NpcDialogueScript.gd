@@ -12,7 +12,8 @@ var player_entered = false
 #NOTE Displays the text above an NPC and removes it after a slight delay
 
 func _ready():
-	speech.text = ""
+	#speech.text = ""
+	pass
 
 func _input(event: InputEvent) -> void:
 	if player_entered and event and Input.is_action_pressed("Enter"):

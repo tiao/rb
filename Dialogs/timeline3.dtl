@@ -1,0 +1,79 @@
+join LesterBarrow center
+LesterBarrow: Podem pedir os seus drinks, meus caros. Garanto que Anthony não morde
+O Sr. Barrow fuma o seu charuto
+join Abigail leftmost
+Abigail: Socorro, como alguém não passa mal com esse cheiro?
+todos se dividem pelo bar
+LesterBarrow: Acredito que será uma noite interessante. Não acha, Abigail?
+Abigail: Você se refere à contratos, senhor?
+LesterBarrow: De um modo…
+LesterBarrow: Também acredito que você estar aqui foi um ótimo detalhe meu.
+Abigail: Um detalhe?
+LesterBarrow: Adoro o nervosismo. Olhe para o nosso jornalista, por exemplo, não consegue conter a ansiedade.
+Abigail: Ah… Sim, claro.
+join Lola rightmost
+Lola: Desculpe por interromper, você precisa de alguma coisa, senhor?
+LesterBarrow: Um dirty martini como sempre. E já leve para o meu escritório, ainda tenho algo a resolver.
+Abigail: E ela continua fazendo o que não é trabalho dela…
+Lola: Sem problemas.
+Abigail: Você veio apenas cumprimentar a todos, senhor?
+LesterBarrow: Acho que seria grosseria se não o fizesse.
+LesterBarrow: Mas o problema é a organização para amanhã, me mantém bem ocupado.
+Abigail: Entendo.
+LesterBarrow: Agora realmente preciso me retirar.
+LesterBarrow: Se me permitem, vou me aprontar no escritório, se alguém precisar de mim.
+leave LesterBarrow
+- Falar com Soldado e a Médica
+	jump timeline3/FalarComSoldadoEaMédica
+- Falar com Lola
+	jump timeline3/FalarComLola
+label FalarComLola
+Abigail: Eu não entendo como o Sr.Barrow quer que a gente converse sobre negócios antes de ele explicar a situação.
+Lola: Mas sendo sincera… faz alguns dias que ele parece nervoso com esse dia.
+Lola: Eu não sei por quê, também porque você sabe que ele nunca fala muito comigo…
+Lola: porém já o ouvi resmungando muita coisa do Sr.Paulsen.
+Lola: Pode estar enganada, mas realmente o estranhei.
+Abigail: Será que é por isso que está aqui hoje?
+Lola: Talvez…
+O seu dirty martini senhorita.
+Lola: Inclusive, você percebeu a “família” ali do fundo?
+Abigail: Família?
+Lola: Sim, o Sr. Paulsen pediu inclusive para o filho tirar seu sobrenome depois de… alguma briga, aparentemente.
+Lola: Mais alguma coisa para você prestar atenção hoje
+Lola: Bom, infelizmente agora eu realmente preciso voltar ao trabalho.
+Lola: As outras meninas estão basicamente presas lá no camarim trabalhando, então talvez eu também passe por lá.
+Abigail: Entendo… Boa sorte ao arrumar o palco! Break a leg!
+leave Lola
+Lola vai ao escritório
+[end_timeline]
+
+label FalarComSoldadoEaMédica
+leave Lola
+Abigail: Boa noite Sr.Knight.
+join David rightmost
+David: Boa noite.
+Abigail: Perdoe-me pela curiosidade, mas estávamos conversando mais cedo...
+Abigail: e o senhor não chegou a dizer como conheceu o Sr. Barrow
+join HarveyPaulsen center
+HarveyPaulsen: Ele o conheceu por mim, é claro.
+HarveyPaulsen: Ora, querida, achei que com seus dotes já teria imaginado que ele é meu filho.
+David: Eu fui para a Guerra. Não perdi a habilidade de falar, pai.
+Abigail: Jesus, queria não ter perguntado.
+David: Porém, ele está certo.
+David: Além disso, também comecei a vir aqui depois que voltei da Guerra.
+David: Cheguei a achar que esse lugar iria falir depois da Lei da Seca
+David: mas o Sr. Barrow foi inteligente ao “abrir seu novo hotel”.
+Abigail: Sim, sim, não imaginava que seria tão grande sucesso
+HarveyPaulsen: Hoje em dia, com toda a prosperidade e regras, é fácil construir um sucesso.
+join Vivianne left
+Vivianne: Se me permitem, por um lado acho algo perigoso… alguém tão rico quanto o Sr. Barrow pode atrair olhares.
+Abigail: Talvez… mas acredito que também tenha muito poder envolvido.
+Vivianne: Exatamente.. Chega um momento que não é apenas sobre o dinheiro, não é Paulsen.
+HarveyPaulsen: Perdão, senhorita, acredito que não a ouvi.
+Vivianne: Nada importante.
+HarveyPaulsen: Se lembre quem foi que te deu um trabalho.
+HarveyPaulsen: Vamos David.
+leave HarveyPaulsen
+leave David
+Lola vai para o escritório e o soldado e o magnata se afastam das meninas
+jump timeline4/

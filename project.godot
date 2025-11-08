@@ -36,6 +36,7 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 directories/dch_directory={
 "Abigail": "res://Dialogs/Abigail.dch",
+"Daniel": "res://Dialogs/Daniel.dch",
 "David": "res://Dialogs/David.dch",
 "HarveyPaulsen": "res://Dialogs/HarveyPaulsen.dch",
 "JamesGilmore": "res://Dialogs/JamesGilmore.dch",
@@ -45,10 +46,14 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "timeline1": "res://Dialogs/timeline1.dtl",
-"timeline2": "res://Dialogs/timeline2.dtl"
+"timeline2": "res://Dialogs/timeline2.dtl",
+"timeline3": "res://Dialogs/timeline3.dtl",
+"timeline4": "res://Dialogs/timeline4.dtl"
 }
 layout/style_directory={}
-variables={}
+variables={
+"T3_ESCOLHA": "0"
+}
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true

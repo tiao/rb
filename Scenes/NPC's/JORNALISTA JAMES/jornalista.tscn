@@ -1,0 +1,64 @@
+[gd_scene load_steps=8 format=3 uid="uid://din1lakuhykf0"]
+
+[ext_resource type="Script" uid="uid://bhtv33qcnpy3q" path="res://Scenes/NPC's/Npc_OfficeWorker/NpcDialogueScript.gd" id="1_6k8hi"]
+[ext_resource type="Texture2D" uid="uid://cj1cx2g3vljpk" path="res://Scenes/NPC's/JORNALISTA JAMES/32-JORNALISTA FRONT.png" id="1_6uk4v"]
+[ext_resource type="Texture2D" uid="uid://cq4euet2nestw" path="res://Scenes/NPC's/JORNALISTA JAMES/32-JORNALISTA PERFIL.png" id="2_6k8hi"]
+[ext_resource type="LabelSettings" uid="uid://da8inon5cmt2r" path="res://Art/Fonts/pixelized_label.tres" id="3_yvnkx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_t56sl"]
+radius = 21.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l6yr8"]
+animations = [{
+"frames": [{
+"duration": 5.0,
+"texture": ExtResource("1_6uk4v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_6k8hi")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pxhik"]
+radius = 13.0
+
+[node name="Jornalista" type="Area2D"]
+script = ExtResource("1_6k8hi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_t56sl")
+
+[node name="NPC" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_l6yr8")
+autoplay = "default"
+frame_progress = 0.97724587
+
+[node name="StaticBody2D" type="StaticBody2D" parent="NPC"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC/StaticBody2D"]
+position = Vector2(1, 5)
+shape = SubResource("CircleShape2D_pxhik")
+
+[node name="CenterContainer" type="CenterContainer" parent="NPC"]
+visible = false
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = -0.79
+anchor_right = 0.5
+offset_left = -167.0
+offset_top = -20.72
+offset_right = 137.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="NPC/CenterContainer"]
+layout_mode = 2
+text = "I talk to the player!"
+label_settings = ExtResource("3_yvnkx")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
